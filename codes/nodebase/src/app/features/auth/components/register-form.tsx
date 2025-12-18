@@ -64,8 +64,8 @@ export function RegisterForm() {
             onSuccess: () => {
                 router.push("/")
             },
-            onError: (ctx) => {
-                toast.error(ctx.error.message);
+            onError: (x) => {
+                toast.error(x.error.message);
             }
         })
     }

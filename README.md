@@ -1,4 +1,4 @@
-# Automation
+# Automation X Nodebase
 
 ---
 
@@ -7,13 +7,16 @@
 > `.env file`
 
 ```
-DATABASE_URL=
+
+DATABASE_URL=""
 
 BETTER_AUTH_SECRET=
 
-BETTER_AUTH_URL=http://localhost:3000
+BETTER_AUTH_URL=
 
 GOOGLE_GENERATIVE_AI_API_KEY=
+
+SENTRY_AUTH_TOKEN=""
 ```
 
 
@@ -21,4 +24,6 @@ GOOGLE_GENERATIVE_AI_API_KEY=
 npx prisma migrate dev
 npx prisma generate
 npm run dev
+# or
+npm run dev:all
 ```
